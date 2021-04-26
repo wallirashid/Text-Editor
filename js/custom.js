@@ -24,15 +24,19 @@ function underLineElement(element){
     element.classList.add("active");
     document.getElementById("formated-text").classList.toggle("underline-element");
 }
-function alignLeftElement(element){
-    element.classList.add("active");
-    document.getElementById("formated-text").classList.toggle("align-left");
-}
-function alignCenterElement(element){
-    element.classList.add("active");
-    document.getElementById("formated-text").classList.toggle("align-center");
-}
-function alignRightElement(element){
-    element.classList.add("active");
-    document.getElementById("formated-text").classList.toggle("align-right");
+function alignElement(element,elementType){
+    if(elementType === "left"){
+        document.getElementById("text-left").classList.add("active");
+        document.getElementById("formated-text").style.textAlign="left";
+    }else if(elementType === "center"){
+        document.getElementById("text-left").classList.remove("active");
+        document.getElementById("text-center").classList.add("active");
+        document.getElementById("formated-text").style.textAlign="center";
+    }else if(elementType === "right"){
+        document.getElementById("text-left").classList.remove("active");
+        document.getElementById("text-center").classList.remove("active");
+        document.getElementById("text-right").classList.add("active");
+        document.getElementById("formated-text").style.textAlign="right";
+    }
+    
 }
