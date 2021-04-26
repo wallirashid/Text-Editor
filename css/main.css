@@ -1,0 +1,35 @@
+.text-editor-heading{
+    margin-top: 20px;
+    text-align: center;
+    color: #166fe5;
+}
+.bg-blue{
+    background: #166fe5;
+}
+.bg-blue .navbar-brand{
+    color: #fff;
+}
+.bg-blue .navbar-brand:hover{
+    color: #fff;
+}
+.wrapper .row button{
+    margin-right: 10px;
+}
+.bold{
+    font-weight: bold;;
+}
+.italic{
+    font-style: italic;
+}
+.underline-element{
+    text-decoration: underline;
+}
+.align-left{
+    text-align: left;
+}
+.align-center{
+    text-align: center;
+}
+.align-right{
+    text-align: right;
+}
